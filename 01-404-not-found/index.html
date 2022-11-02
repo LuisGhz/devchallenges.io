@@ -1,95 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1,
-  maximum-scale=5"
-    />
-
-    <link rel="icon" href="devchallenges.png" />
-
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="https://devchallenges.io/"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-
-    <title>Devchallenges</title>
-
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 Not Found</title>
     <style>
+      html,
       body {
-        font-family: "Poppins", sans-serif;
+        height: 100%;
       }
 
-      ul {
-        padding-left: 24px;
+      .not-found {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto min-content;
+        min-height: 100%;
       }
 
-      li {
-        margin-bottom: 8px;
+      .body-title__not-found-title {
+        color: #333333;
+        font-family: "Inconsolata";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: -0.08em;
+        line-height: 25px;
+        text-align: center;
+        text-transform: uppercase;
       }
 
-      .welcome {
-        max-width: 800px;
+      .body-title__img {
+        display: block;
         margin: 0 auto;
+        width: 15rem;
       }
 
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
+      .body-message {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
       }
 
-      .welcome-text p {
-        font-size: 1rem;
+      .body-message__bad-news-title {
+        color: #333333;
+        font-family: "Space Mono";
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: -0.035em;
+        line-height: 71px;
+        width: 90%;
+      }
+
+      .body-message__text {
+        color: #4f4f4f;
+        font-family: "Space Mono";
+        font-size: 18px;
+        font-style: normal;
         font-weight: 400;
+        letter-spacing: -0.035em;
+        line-height: 27px;
+        width: 90%;
       }
 
-      .welcome-text h1 {
-        font-size: 1.5rem;
+      .body-message__link {
+        align-items: center;
+        background: #333333;
+        color: #ffffff;
+        display: flex;
+        font-family: "Space Mono";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        height: 4rem;
+        justify-content: center;
+        letter-spacing: -0.035em;
+        line-height: 21px;
+        text-decoration: none;
+        text-transform: uppercase;
+        width: 13rem;
       }
 
-      .welcome-text a {
-        color: #f7542e;
+      .footer {
+        color: #bdbdbd;
+        font-family: "Montserrat";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 17px;
+        padding: 0.5rem 0;
+        text-align: center;
+      }
+
+      @media screen and (min-width: 426px) {
+        .body {
+          display: flex;
+          flex-direction: row;
+        }
+
+        .body-message {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          width: 50%;
+        }
+
+        .body-title {
+          display: flex;
+          flex-direction: column;
+          width: 50%;
+        }
+
+        .body-title__img {
+          margin: auto;
+          width: 20rem;
+        }
+      }
+
+      @media screen and (min-width: 769px) {
+        .body-title__img {
+          width: 25rem;
+        }
+
+        .body-message__bad-news-title {
+          font-size: 64px;
+          line-height: 95px;
+        }
+
+        .body-message__text {
+          font-size: 24px;
+          line-height: 36px;
+        }
+      }
+
+      @media screen and (min-width: 1439px) {
+        .body-title__img {
+          width: 35rem;
+        }
       }
     </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
-
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
-        </p>
-      </div>
-
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
-    </div>
+    <main class="not-found">
+      <section class="body">
+        <section class="body-title">
+          <h1 class="body-title__not-found-title">404 NOT FOUND</h1>
+          <img
+            class="body-title__img"
+            src="./Scarecrow.png"
+            alt="Scarecrow image"
+          />
+        </section>
+        <section class="body-message">
+          <h3 class="body-message__bad-news-title">I have bad news for you</h3>
+          <p class="body-message__text">
+            The page you are looking for might be removed or is temporarily
+            unavailable
+          </p>
+          <a href="#" class="body-message__link">BACK TO HOMEPAGE</a>
+        </section>
+      </section>
+      <footer class="footer">Created by luisghtz - devChallenges.io</footer>
+    </main>
   </body>
 </html>
