@@ -146,8 +146,8 @@
       .designer-container {
         background-color: #181719;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        position: absolute;
-        bottom: -100px;
+        position: relative;
+        bottom: 50px;
         width: 80%;
         left: calc(50% - 7rem);
       }
@@ -190,6 +190,19 @@
         line-height: 1.35rem;
         padding-inline-start: .7rem;
         margin-block-start: 0;
+      }
+
+      .footer p {
+        color: #A9A9A9;
+        font-size: .9rem;
+        line-height: 1.05rem;
+        padding-bottom: 1rem;
+        text-align: center;
+      }
+
+      .footer .username {
+        font-weight: bold;
+        text-decoration: underline;
       }
     </style>
     <title>03 Interior consultant</title>
@@ -235,6 +248,8 @@
         </div>
       </div>
     </section>
-    <footer></footer>
+    <footer class="footer">
+      <p>Created by <span class="username">luisghtz</span> - devChallenges.tio</p>
+    </footer>
   </body>
 </html>
