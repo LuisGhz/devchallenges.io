@@ -1,27 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body, html {
-      background-color: black;
-      color: white;
-      height: 100%;
-    }
-  </style>
-  <title>03 Interior consultant</title>
-</head>
-<body>
-  <header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body,
+      html {
+        background-color: black;
+        color: white;
+        height: 100%;
+      }
 
-  </header>
-  <section>
+      .header {
+        display: flex;
+        padding-top: 1rem;
+        justify-content: space-between;
+        width: 100%;
+      }
 
-  </section>
-  <footer>
-    
-  </footer>
-</body>
+      .hamburger-menu {
+        display: block;
+        height: 45px;
+        width: 45px;
+      }
+
+      .hamburger-element {
+        background: white;
+        border-radius: 0.1rem;
+        display: block;
+        height: 3px;
+        width: 70%;
+      }
+
+      .hamburger-middle, .hamburger-bottom {
+        margin-top: .3rem;
+      }
+
+      .hidden-checkbox {
+        display: none;
+      }
+    </style>
+    <title>03 Interior consultant</title>
+  </head>
+  <body>
+    <header class="header">
+      <span>THIS INTERIOR</span>
+      <input class="hidden-checkbox" type="checkbox" id="checkbox">
+      <label class="hamburger-menu" for="checkbox">
+        <span class="hamburger-element hamburger-top"></span>
+        <span class="hamburger-element hamburger-middle"></span>
+        <span class="hamburger-element hamburger-bottom"></span>
+      </label>
+    </header>
+    <section></section>
+    <footer></footer>
+  </body>
 </html>
