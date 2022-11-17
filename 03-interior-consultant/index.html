@@ -37,10 +37,36 @@
         margin-top: .3rem;
       }
 
+      .hamburger-top, .hamburger-bottom {
+        transition: rotate 200ms linear, translate 200ms linear .5s;
+      }
+
+      .hamburger-middle {
+        opacity: 1;
+        transition: opacity 1s;
+        transition-delay: 150ms;
+      }
+
       .hidden-checkbox {
         display: none;
       }
-    </style>
+      
+      .hidden-checkbox:checked + .hamburger-menu .hamburger-middle {
+        opacity: 0;
+      }
+
+      .hidden-checkbox:checked + .hamburger-menu .hamburger-top {
+        transition: translate 200ms linear, rotate 200ms linear .5s;
+        translate: 0 8px;
+        rotate: 45deg;
+      }
+      
+      .hidden-checkbox:checked + .hamburger-menu .hamburger-bottom {
+        transition: translate 200ms linear, rotate 200ms linear .5s;
+        translate: 0 -8px;
+        rotate: -45deg;
+      }
+      </style>
     <title>03 Interior consultant</title>
   </head>
   <body>
