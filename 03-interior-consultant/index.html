@@ -23,6 +23,7 @@
         display: block;
         height: 45px;
         width: 45px;
+        z-index: 3;
       }
 
       .hamburger-element {
@@ -33,12 +34,14 @@
         width: 70%;
       }
 
-      .hamburger-middle, .hamburger-bottom {
-        margin-top: .3rem;
+      .hamburger-middle,
+      .hamburger-bottom {
+        margin-top: 0.3rem;
       }
 
-      .hamburger-top, .hamburger-bottom {
-        transition: rotate 200ms linear, translate 200ms linear .5s;
+      .hamburger-top,
+      .hamburger-bottom {
+        transition: rotate 200ms linear, translate 200ms linear 0.5s;
       }
 
       .hamburger-middle {
@@ -50,34 +53,79 @@
       .hidden-checkbox {
         display: none;
       }
-      
+
       .hidden-checkbox:checked + .hamburger-menu .hamburger-middle {
         opacity: 0;
       }
 
       .hidden-checkbox:checked + .hamburger-menu .hamburger-top {
-        transition: translate 200ms linear, rotate 200ms linear .5s;
+        transition: translate 200ms linear, rotate 200ms linear 0.5s;
         translate: 0 8px;
         rotate: 45deg;
       }
-      
+
       .hidden-checkbox:checked + .hamburger-menu .hamburger-bottom {
-        transition: translate 200ms linear, rotate 200ms linear .5s;
+        transition: translate 200ms linear, rotate 200ms linear 0.5s;
         translate: 0 -8px;
         rotate: -45deg;
       }
-      </style>
+
+      .menu-mobile {
+        background-color: black;
+        display: none;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+      }
+
+      .hidden-checkbox:checked ~ .menu-mobile {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        z-index: 1;
+      }
+
+      .ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .ul li {
+        margin-block-end: .5rem;
+        padding-block-end: .1rem;
+        width: min-content;
+      }
+      
+      .ul li.active {
+        border-block-end: 1px solid white;
+      }
+
+
+    </style>
     <title>03 Interior consultant</title>
   </head>
   <body>
     <header class="header">
       <span>THIS INTERIOR</span>
-      <input class="hidden-checkbox" type="checkbox" id="checkbox">
+      <input class="hidden-checkbox" type="checkbox" id="checkbox" />
       <label class="hamburger-menu" for="checkbox">
         <span class="hamburger-element hamburger-top"></span>
         <span class="hamburger-element hamburger-middle"></span>
         <span class="hamburger-element hamburger-bottom"></span>
       </label>
+      <section class="menu-mobile">
+        <ul class="ul">
+          <li class="active">Home</li>
+          <li>Collection</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </section>
     </header>
     <section></section>
     <footer></footer>
