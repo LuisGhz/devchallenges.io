@@ -135,6 +135,7 @@
       .img-container {
         position: relative;
         width: 100%;
+        max-width: 500px;
       }
 
       .img-container img {
@@ -146,10 +147,10 @@
       .designer-container {
         background-color: #181719;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        position: relative;
-        bottom: 50px;
-        width: 80%;
-        left: calc(50% - 7rem);
+        position: absolute;
+        bottom: -4rem;
+        width: 15rem;
+        right: 2rem;
       }
 
       .designer {
@@ -226,25 +227,29 @@
       </section>
     </header>
     <section>
-      <h1 class="title">Modern interior</h1>
-      <p class="text-service">
-        A full-Service residential & commercial interior design and staging
-        company offering professional organizing & eco-services.
-      </p>
-      <p class="read-more-text">Read more &#8594;</p>
-      <div class="img-container">
-        <img src="./photo1.png" alt="Room picture">
-        <div class="designer-container">
-          <div class="designer">
-            <div class="designer-img">
-              <img src="./photo2.png" alt="Aliza webber photo">
+      <div class="first-column">
+        <h1 class="title">Modern interior</h1>
+        <p class="text-service">
+          A full-Service residential & commercial interior design and staging
+          company offering professional organizing & eco-services.
+        </p>
+        <p class="read-more-text">Read more &#8594;</p>
+      </div>
+      <div class="second-column" >
+        <div class="img-container">
+          <img src="./photo1.png" alt="Room picture">
+          <div class="designer-container">
+            <div class="designer">
+              <div class="designer-img">
+                <img src="./photo2.png" alt="Aliza webber photo">
+              </div>
+              <div class="designer-info">
+                <p class="designer-name">Aliza Webber</p>
+                <p class="designer-position">Interior designer</p>
+              </div>
             </div>
-            <div class="designer-info">
-              <p class="designer-name">Aliza Webber</p>
-              <p class="designer-position">Interior designer</p>
-            </div>
+            <h3 class="design-date">Designed in 2020 by Aliza Webber</h3>
           </div>
-          <h3 class="design-date">Designed in 2020 by Aliza Webber</h3>
         </div>
       </div>
     </section>
