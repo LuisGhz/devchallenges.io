@@ -73,7 +73,7 @@
 
       .recipe-data-metadata {
         display: grid;
-        grid-template-areas: 
+        grid-template-areas:
           "icon name name"
           "icon time time";
       }
@@ -109,9 +109,52 @@
 
       .recipe-data-metadata--orange .recipe-data-metadata__icon,
       .recipe-data-metadata--orange .recipe-data-metadata__data {
-        color: #F2994A;
+        color: #f2994a;
       }
 
+      .recipe-steps__title {
+        color: #333333;
+        font-family: "Playfair Display";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px;
+        margin-block-start: 1rem;
+        margin-block-end: 0;
+      }
+
+      .recipe-steps__name {
+        color: #333333;
+        font-family: "Playfair Display";
+        font-size: 16px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 21px;
+      }
+
+      .recipe-steps-ingredients__list {
+        list-style: none;
+        padding-inline-start: 0;
+      }
+
+      .recipe-steps-ingredients__list li {
+        color: #333333;
+        font-family: "Montserrat";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px;
+        padding-block-end: 0.5rem;
+      }
+
+      .recipe-steps-ingredients__list label {
+        color: #333333;
+        font-family: "Montserrat";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 17px;
+      }
     </style>
   </head>
   <body>
@@ -135,8 +178,10 @@
     </section>
     <main>
       <section class="recipe-data">
-        <article class="recipe-data-metadata recipe-data-metadata--orange yields">
-          <i class="recipe-data-metadata__icon  fa fa-spoon"></i>
+        <article
+          class="recipe-data-metadata recipe-data-metadata--orange yields"
+        >
+          <i class="recipe-data-metadata__icon fa fa-spoon"></i>
           <p class="recipe-data-metadata__name">YIELDS</p>
           <p class="recipe-data-metadata__data">12 servings</p>
         </article>
@@ -156,7 +201,119 @@
           <p class="recipe-data-metadata__data">7,75 hours</p>
         </article>
       </section>
-      <section class="recipe-steps"></section>
+      <section class="recipe-steps">
+        <h2 class="recipe-steps__title">Ingredients</h2>
+        <div>
+          <p class="recipe-steps__name">Graham Cracker Crust</p>
+          <div class="recipe-steps-ingredients">
+            <ul class="recipe-steps-ingredients__list">
+              <li>
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  id="ingredient-1"
+                /><label for="ingredient-1"
+                  >1 and 1/2 cups (150g) <b>graham cracker crumbs</b> (about 10
+                  full sheet graham crackers)</label
+                >
+              </li>
+              <li>
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  id="ingredient-2"
+                /><label for="ingredient-2"
+                  >5 Tablespoons (70g) <b>unsalted butter</b>, melted</label
+                >
+              </li>
+              <li>
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  id="ingredient-3"
+                /><label for="ingredient-3"
+                  >1/4 cup (50g) <b>granulated sugar</b></label
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <p class="recipe-steps__name">Cheesecake</p>
+          <div class="recipe-steps-ingredients">
+            <ul class="recipe-steps-ingredients__list">
+              <li>
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  id="ingredient-1"
+                /><label for="ingredient-1"
+                  >four 8-ounce blocks (904g) full-fat <b>cream cheese</b>,
+                  softened to room temperature</label
+                >
+              </li>
+              <li>
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  id="ingredient-2"
+                /><label for="ingredient-2"
+                  >1 cup (200g) <b>granulated sugar</b></label
+                >
+              </li>
+              <li>
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  id="ingredient-3"
+                /><label for="ingredient-3"
+                  >1 cup (240g) full-fat <b>sour cream</b>, at room
+                  temperature</label
+                >
+              </li>
+              <li>
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  id="ingredient-4"
+                /><label for="ingredient-4"
+                  >1 teaspoon <b>pure vanilla extract</b></label
+                >
+              </li>
+              <li>
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  id="ingredient-5"
+                /><label for="ingredient-5"
+                  >2 teaspoons <b>fresh lemon juice</b> (optional, but
+                  recommended)</label
+                >
+              </li>
+              <li>
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  id="ingredient-6"
+                /><label for="ingredient-6"
+                  >3 large <b>eggs</b>, at room temperature</label
+                >
+              </li>
+              <li>
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  id="ingredient-7"
+                /><label for="ingredient-7"
+                  >topping suggestions: salted caramel, lemon curd, strawberry
+                  topping, chocolate ganache, red wine chocolate ganache, fresh
+                  fruit, whipped cream, or raspberry sauce (recipe in notes)
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
