@@ -1,12 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Recipe Page</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"
+    />
+    <style>
+      .header__title {
+        font-family: "Playfair Display";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+        margin-block-start: 2rem;
+      }
+
+      .header-text-container {
+        display: flex;
+        align-items: start;
+        column-gap: 0.5rem;
+      }
+
+      .header-text-container__img {
+        margin-block-start: 0.2rem;
+      }
+
+      .header-text-container__text {
+        font-family: "Montserrat";
+        font-size: 12px;
+        font-style: italic;
+        font-weight: 500;
+        line-height: 15px;
+        margin: 0;
+      }
+
+      .recipe-image {
+        margin-block-start: 2rem;
+      }
+
+      .recipe-image__img {
+        width: 100%;
+      }
+
+      .recipe-data {
+        display: grid;
+        grid-template-areas:
+          "yields empty empty"
+          "prep-time cook-time total-time";
+        padding-block-start: 1.5rem;
+        row-gap: 1.5rem;
+      }
+
+      .yields {
+        grid-area: yields;
+      }
+
+      .prep-time {
+        grid-area: prep-time;
+      }
+
+      .cook-time {
+        grid-area: cook-time;
+      }
+
+      .total-time {
+        grid-area: total-time;
+      }
+
+      .recipe-data-metadata {
+        display: grid;
+        grid-template-areas: 
+          "icon name name"
+          "icon time time";
+      }
+
+      .recipe-data-metadata .recipe-data-metadata__icon {
+        grid-area: icon;
+        display: flex;
+        place-content: center;
+      }
+
+      .recipe-data-metadata .recipe-data-metadata__name {
+        color: #bdbdbd;
+        font-family: "Montserrat";
+        font-size: 8px;
+        font-style: normal;
+        font-weight: 700;
+        grid-area: name;
+        line-height: 10px;
+        margin: 0;
+        text-transform: uppercase;
+      }
+
+      .recipe-data-metadata .recipe-data-metadata__data {
+        color: #333333;
+        font-family: "Montserrat";
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 500;
+        grid-area: time;
+        line-height: 12px;
+        margin: 0;
+      }
+
+      .recipe-data-metadata--orange .recipe-data-metadata__icon,
+      .recipe-data-metadata--orange .recipe-data-metadata__data {
+        color: #F2994A;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">Classic Cheesecake Recipe</h1>
+      <div class="header-text-container">
+        <img
+          class="header-text-container__img"
+          src="./6dots.svg"
+          alt="dots image"
+        />
+        <p class="header-text-container__text">
+          Look no further for a creamy and ultra smooth classic cheesecake
+          recipe! Paired with a buttery graham cracker crust, no one can deny
+          its simple decadence. For the best results, bake in a water bath.
+        </p>
+      </div>
+    </header>
+    <section class="recipe-image">
+      <img class="recipe-image__img" src="./photo1.png" alt="Food image" />
+    </section>
+    <main>
+      <section class="recipe-data">
+        <article class="recipe-data-metadata recipe-data-metadata--orange yields">
+          <i class="recipe-data-metadata__icon  fa fa-spoon"></i>
+          <p class="recipe-data-metadata__name">YIELDS</p>
+          <p class="recipe-data-metadata__data">12 servings</p>
+        </article>
+        <article class="recipe-data-metadata prep-time">
+          <i class="recipe-data-metadata__icon fa fa-stopwatch"></i>
+          <p class="recipe-data-metadata__name">PREP TIME</p>
+          <p class="recipe-data-metadata__data">45 minutes</p>
+        </article>
+        <article class="recipe-data-metadata cook-time">
+          <i class="recipe-data-metadata__icon fa fa-stopwatch"></i>
+          <p class="recipe-data-metadata__name">COOK TIME</p>
+          <p class="recipe-data-metadata__data">1 hour</p>
+        </article>
+        <article class="recipe-data-metadata total-time">
+          <i class="recipe-data-metadata__icon fa fa-stopwatch"></i>
+          <p class="recipe-data-metadata__name">TOTAL TIME</p>
+          <p class="recipe-data-metadata__data">7,75 hours</p>
+        </article>
+      </section>
+      <section class="recipe-steps"></section>
+    </main>
+  </body>
 </html>
