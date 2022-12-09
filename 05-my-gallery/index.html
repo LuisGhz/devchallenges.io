@@ -111,6 +111,7 @@
         grid-template-rows: repeat(3, 14rem);
         height: 30rem;
         margin-block-start: 4rem;
+        max-width: 80rem;
         width: 100%;
       }
 
@@ -153,6 +154,26 @@
         font-size: 1.4rem;
         line-height: 1.7rem;
         text-align: center;
+      }
+
+      @media screen and (min-width: 768px) {
+        .images {
+          grid-template-rows: repeat(3, 16rem);
+          margin: 0 auto;
+          margin-block-start: 2rem;
+        }
+      }
+
+      @media screen and (min-width: 1024px) {
+        .images {
+          grid-template-rows: repeat(3, 18rem);
+        }
+      }
+
+      @media screen and (min-width: 1280px) {
+        .images {
+          grid-template-rows: repeat(3, 20rem);
+        }
       }
     </style>
   </head>
