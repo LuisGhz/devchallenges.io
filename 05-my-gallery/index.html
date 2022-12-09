@@ -10,6 +10,24 @@
         font-size: 62.5%;
       }
 
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .main {
+        padding-block-start: 3rem;
+        padding-inline-start: 1rem;
+        padding-inline-end: 1rem;
+      }
+
       .user-content {
         align-items: center;
         display: flex;
@@ -22,8 +40,8 @@
       }
 
       .user-content__name {
-        color: #4E5150;
-        font-family: 'Montserrat';
+        color: #4e5150;
+        font-family: "Montserrat";
         font-style: normal;
         font-weight: 600;
         font-size: 1.4rem;
@@ -32,13 +50,13 @@
         text-align: center;
       }
       .user-content__location {
-        color: #A9A9A9;
-        font-family: 'Montserrat';
+        color: #a9a9a9;
+        font-family: "Montserrat";
         font-style: normal;
         font-weight: 600;
         font-size: 1rem;
         line-height: 1.2rem;
-        margin-block-start: .5rem;
+        margin-block-start: 0.5rem;
         text-align: center;
       }
 
@@ -50,15 +68,15 @@
       }
 
       .user-data-element {
-        background: #E5E5E5;
+        background: #e5e5e5;
         border-radius: 1.2rem;
         padding-inline-start: 2.5rem;
         padding-inline-end: 2.5rem;
       }
 
       .user-data-element__data {
-        color: #4E5150;
-        font-family: 'Montserrat';
+        color: #4e5150;
+        font-family: "Montserrat";
         font-style: normal;
         font-weight: 600;
         font-size: 1.2rem;
@@ -67,8 +85,8 @@
       }
 
       .user-data-element__data-type {
-        color: #BDBDBD;
-        font-family: 'Montserrat';
+        color: #bdbdbd;
+        font-family: "Montserrat";
         font-style: normal;
         font-weight: 600;
         font-size: 1.2rem;
@@ -114,14 +132,24 @@
       .img-5 {
         grid-area: 3 / 5 / 4 / 9;
       }
-      
+
       .img-6 {
         grid-area: 3 / 1 / 4 / 5;
+      }
+      
+      .footer {
+        color: #B9BDCF;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+        text-align: center;
       }
     </style>
   </head>
   <body>
-    <main>
+    <main class="main">
       <section class="user-content">
         <img
           class="user-content__image"
@@ -146,14 +174,16 @@
         </section>
       </section>
       <section class="images">
-        <img class="images__img img-1" src="./photo1.png" alt="Image 1">
-        <img class="images__img img-2" src="./photo2.png" alt="Image 2">
-        <img class="images__img img-3" src="./photo3.png" alt="Image 3">
-        <img class="images__img img-4" src="./photo4.png" alt="Image 4">
-        <img class="images__img img-5" src="./photo5.png" alt="Image 5">
-        <img class="images__img img-6" src="./photo6.png" alt="Image 6">
+        <img class="images__img img-1" src="./photo1.png" alt="Image 1" />
+        <img class="images__img img-2" src="./photo2.png" alt="Image 2" />
+        <img class="images__img img-3" src="./photo3.png" alt="Image 3" />
+        <img class="images__img img-4" src="./photo4.png" alt="Image 4" />
+        <img class="images__img img-5" src="./photo5.png" alt="Image 5" />
+        <img class="images__img img-6" src="./photo6.png" alt="Image 6" />
       </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <p>Created by <b>Luisghtz</b> - devChallenges.io</p>
+    </footer>
   </body>
 </html>
